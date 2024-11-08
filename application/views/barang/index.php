@@ -35,21 +35,21 @@
                             $no = 1;
                             foreach ($barang as $barang) {
                                 echo "<tr>
-                  <td>{$no}</td>
-                  <td>{$barang->barkode}</td>
-                  <td>{$barang->name}</td>
-                  <td>{$barang->satuan}</td>
-                  <td>{$barang->kategori}</td>
-                  <td>{$barang->stok}</td>
-                  <td>{$barang->harga_beli}</td>
-                  <td>{$barang->harga_jual}</td>
-                  <td>
+                                <td>{$no}</td>
+                                <td>{$barang->barkode}</td>
+                                <td>{$barang->name}</td>
+                                <td>{$barang->satuan}</td>
+                                <td>{$barang->kategori}</td>
+                                <td>{$barang->stok}</td>
+                                <td>{$barang->harga_beli}</td>
+                                <td>{$barang->harga_jual}</td>
+                                <td>
                     <div>
-                      <a href='" . base_url('barang/getedit/' . $barang->id) . "' class='btn btn-sm btn-info'><i class='fas fa-edit'></i> Edit</a>
-                      <a href='" . base_url('barang/delete/' . $barang->id) . "' class='btn btn-sm btn-danger' 
+                    <a href='" . base_url('barang/getedit/' . $barang->id) . "' class='btn btn-sm btn-info'><i class='fas fa-edit'></i> Edit</a>
+                    <a href='" . base_url('barang/delete/' . $barang->id) . "' class='btn btn-sm btn-danger' 
                         onclick='return confirm(\"Ingin mengapus data kategori ini?\");'><i class='fas fa-trash'></i> Hapus</a>
                     </div>
-                  </td>
+                    </td>
                 </tr>";
                                 $no++;
                             } ?>
